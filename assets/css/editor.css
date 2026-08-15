@@ -1,0 +1,67 @@
+/* Editor-only adjustments. Front end is unaffected. */
+
+.editor-styles-wrapper .site-header,
+.editor-styles-wrapper .mobile-menu {
+	position: relative;
+	inset: auto;
+	z-index: auto;
+}
+
+.editor-styles-wrapper .mobile-menu {
+	display: block;
+	padding: 30px 24px;
+	background: rgba(11, 13, 18, 0.96);
+}
+
+.editor-styles-wrapper .hero {
+	min-height: 0;
+	padding-top: 80px;
+}
+
+.editor-styles-wrapper .faq-intro {
+	position: static;
+}
+
+/* Reveal animations must never hide content while editing. */
+.editor-styles-wrapper .reveal {
+	opacity: 1;
+	transform: none;
+}
+
+/* Show every tab panel so all copy is reachable in the editor. */
+.editor-styles-wrapper .tab-panel {
+	display: grid;
+	border-top: 1px solid var(--border);
+}
+
+/* Overlay links would swallow clicks on the canvas. */
+.editor-styles-wrapper .case-cover-link {
+	display: none;
+}
+
+.editor-styles-wrapper .scroll-cue,
+.editor-styles-wrapper .skip-link {
+	display: none;
+}
+
+.editor-styles-wrapper .system-card {
+	position: static;
+	width: 100%;
+	transform: none;
+}
+
+.editor-styles-wrapper .hero-visual {
+	min-height: 0;
+	perspective: none;
+}
+
+.editor-styles-wrapper .floating-badge {
+	position: static;
+	margin-top: 12px;
+	animation: none;
+}
+
+.editor-styles-wrapper .site-shell {
+	width: 100%;
+	max-width: 1320px;
+}
