@@ -1,54 +1,100 @@
-<!-- wp:html -->
-<a class="skip-link" href="#main-content">Skip to content</a>
-<!-- /wp:html -->
+<!-- wp:group {"className":"site-header-wrap","layout":{"type":"default"}} -->
+<div class="wp-block-group site-header-wrap">
 
-<!-- wp:group {"className":"site-shell header-inner","layout":{"type":"default"}} -->
-<div class="wp-block-group site-shell header-inner">
+	<!-- wp:group {"className":"site-shell modern-header","layout":{"type":"default"}} -->
+	<div class="wp-block-group site-shell modern-header">
 
-	<!-- wp:site-logo {"width":190,"className":"site-logo"} /-->
+		<!-- Brand -->
+		<!-- wp:group {"className":"header-brand","layout":{"type":"default"}} -->
+		<div class="wp-block-group header-brand">
+			<!-- wp:site-logo {"width":155,"className":"site-logo"} /-->
+		</div>
+		<!-- /wp:group -->
 
-	<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Primary navigation","className":"desktop-nav","layout":{"type":"flex","orientation":"horizontal"}} -->
-		<!-- wp:navigation-link {"label":"Services","url":"/services/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"Case Studies","url":"/case-studies/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"Contact","url":"/contact/","kind":"custom","isTopLevelLink":true} /-->
-	<!-- /wp:navigation -->
+		<!-- Desktop Navigation -->
+		<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Primary navigation","className":"desktop-nav modern-nav","layout":{"type":"flex","orientation":"horizontal"}} -->
+			<!-- wp:navigation-link {"label":"Services","url":"/services/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Case Studies","url":"/case-studies/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Contact","url":"/contact/","kind":"custom","isTopLevelLink":true} /-->
+		<!-- /wp:navigation -->
 
-	<!-- wp:buttons {"className":"header-cta-slot"} -->
-	<div class="wp-block-buttons header-cta-slot">
-		<!-- wp:button {"className":"header-cta magnetic icon-diagonal"} -->
-		<div class="wp-block-button header-cta magnetic icon-diagonal"><a class="wp-block-button__link wp-element-button" href="/contact/">Get started</a></div>
-		<!-- /wp:button -->
+		<!-- Actions -->
+		<!-- wp:group {"className":"header-actions","layout":{"type":"flex","justifyContent":"right","verticalAlignment":"center"}} -->
+		<div class="wp-block-group header-actions">
+
+			<!-- wp:buttons {"className":"header-cta-slot"} -->
+			<div class="wp-block-buttons header-cta-slot">
+				<!-- wp:button {"className":"header-cta magnetic icon-diagonal","url":"/contact/"} -->
+				<div class="wp-block-button header-cta magnetic icon-diagonal">
+					<a class="wp-block-button__link wp-element-button" href="/contact/">Get Started</a>
+				</div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+
+			<!-- Mobile menu trigger: native Button block, fully editable in Site Editor -->
+			<!-- wp:button {"className":"modern-menu-toggle","url":"#mobile-menu"} -->
+			<div class="wp-block-button modern-menu-toggle">
+				<a class="wp-block-button__link wp-element-button" href="#mobile-menu">Menu</a>
+			</div>
+			<!-- /wp:button -->
+
+		</div>
+		<!-- /wp:group -->
+
 	</div>
-	<!-- /wp:buttons -->
-
-	<!-- wp:html -->
-	<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation">
-		<span></span>
-		<span></span>
-	</button>
-	<!-- /wp:html -->
+	<!-- /wp:group -->
 
 </div>
 <!-- /wp:group -->
 
+<!-- Mobile navigation -->
 <!-- wp:group {"className":"mobile-menu","anchor":"mobile-menu","layout":{"type":"default"}} -->
 <div class="wp-block-group mobile-menu" id="mobile-menu">
 
-	<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Mobile navigation","className":"mobile-nav","layout":{"type":"flex","orientation":"vertical"}} -->
-		<!-- wp:navigation-link {"label":"Services","url":"/services/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"Case Studies","url":"/case-studies/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
-		<!-- wp:navigation-link {"label":"Contact","url":"/contact/","kind":"custom","isTopLevelLink":true} /-->
-	<!-- /wp:navigation -->
+	<div class="mobile-menu-inner">
 
-	<!-- wp:buttons -->
-	<div class="wp-block-buttons">
-		<!-- wp:button {"className":"button-primary icon-diagonal"} -->
-		<div class="wp-block-button button-primary icon-diagonal"><a class="wp-block-button__link wp-element-button" href="/contact/">Start a project</a></div>
-		<!-- /wp:button -->
+		<!-- wp:group {"className":"mobile-menu-top","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center"}} -->
+		<div class="wp-block-group mobile-menu-top">
+			<!-- wp:paragraph -->
+			<p>Navigation</p>
+			<!-- /wp:paragraph -->
+
+			<!-- wp:button {"className":"mobile-menu-close","url":"#mobile-menu-close"} -->
+			<div class="wp-block-button mobile-menu-close">
+				<a class="wp-block-button__link wp-element-button" href="#mobile-menu-close">Close</a>
+			</div>
+			<!-- /wp:button -->
+		</div>
+		<!-- /wp:group -->
+
+		<!-- wp:navigation {"overlayMenu":"never","ariaLabel":"Mobile navigation","className":"mobile-nav","layout":{"type":"flex","orientation":"vertical"}} -->
+			<!-- wp:navigation-link {"label":"Services","url":"/services/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Case Studies","url":"/case-studies/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"About","url":"/about/","kind":"custom","isTopLevelLink":true} /-->
+			<!-- wp:navigation-link {"label":"Contact","url":"/contact/","kind":"custom","isTopLevelLink":true} /-->
+		<!-- /wp:navigation -->
+
+		<!-- wp:group {"className":"mobile-menu-footer","layout":{"type":"default"}} -->
+		<div class="wp-block-group mobile-menu-footer">
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons">
+				<!-- wp:button {"className":"button-primary icon-diagonal","url":"/contact/"} -->
+				<div class="wp-block-button button-primary icon-diagonal">
+					<a class="wp-block-button__link wp-element-button" href="/contact/">Get Started</a>
+				</div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+
+			<!-- wp:paragraph -->
+			<p>24/7 infrastructure. Zero guesswork.</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:group -->
+
 	</div>
-	<!-- /wp:buttons -->
 
 </div>
 <!-- /wp:group -->

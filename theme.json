@@ -9,6 +9,8 @@
     },
     "color": {
       "defaultPalette": false,
+      "defaultGradients": false,
+      "customDuotone": false,
       "palette": [
         {
           "slug": "orange",
@@ -74,14 +76,41 @@
     },
     "spacing": {
       "blockGap": false,
+      "padding": true,
+      "margin": true,
       "units": [
         "px",
         "rem",
-        "vw"
+        "vw",
+        "%"
+      ],
+      "spacingSizes": [
+        {
+          "slug": "20",
+          "name": "1 - Tight",
+          "size": "clamp(0.75rem, 1.4vw, 1rem)"
+        },
+        {
+          "slug": "40",
+          "name": "2 - Regular",
+          "size": "clamp(1.5rem, 3vw, 2.25rem)"
+        },
+        {
+          "slug": "60",
+          "name": "3 - Roomy",
+          "size": "clamp(2.5rem, 5vw, 4rem)"
+        },
+        {
+          "slug": "80",
+          "name": "4 - Section",
+          "size": "clamp(4.5rem, 7.5vw, 7.25rem)"
+        }
       ]
     },
     "typography": {
       "fluid": true,
+      "customFontSize": true,
+      "lineHeight": true,
       "fontFamilies": [
         {
           "slug": "space-grotesk",
@@ -93,10 +122,43 @@
           "name": "Inter",
           "fontFamily": "'Inter', 'Segoe UI', system-ui, sans-serif"
         }
+      ],
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.8125rem"
+        },
+        {
+          "slug": "medium",
+          "name": "Medium",
+          "size": "1rem"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.125rem",
+          "fluid": {
+            "min": "1.0625rem",
+            "max": "1.25rem"
+          }
+        },
+        {
+          "slug": "x-large",
+          "name": "Extra Large",
+          "size": "1.75rem",
+          "fluid": {
+            "min": "1.5rem",
+            "max": "2rem"
+          }
+        }
       ]
     },
     "border": {
-      "radius": true
+      "radius": true,
+      "color": true,
+      "style": true,
+      "width": true
     }
   },
   "styles": {
@@ -153,33 +215,33 @@
             "text": "var(--wp--preset--color--white)"
           }
         }
-      },
-      "blocks": {
-        "core/site-title": {
-          "typography": {
-            "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
-            "fontWeight": "700"
-          }
-        },
-        "core/navigation": {
-          "typography": {
-            "fontSize": "14px",
-            "fontWeight": "500"
-          }
-        }
       }
     },
-    "templateParts": [
-      {
-        "name": "header",
-        "title": "Header",
-        "area": "header"
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+          "fontWeight": "700"
+        }
       },
-      {
-        "name": "footer",
-        "title": "Footer",
-        "area": "footer"
+      "core/navigation": {
+        "typography": {
+          "fontSize": "14px",
+          "fontWeight": "500"
+        }
       }
-    ]
-  }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    }
+  ]
 }
