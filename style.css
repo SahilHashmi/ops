@@ -7630,10 +7630,10 @@ section.hero{
 }
 
 /* =========================================================
-   HOMEPAGE TYPOGRAPHY — FIRA SANS MEDIUM / BOLD
+   HOMEPAGE TYPOGRAPHY — LCT PICON MEDIUM / CLOSE FALLBACK
    ========================================================= */
 body.home{
-  --font-humanist:"Fira Sans","Segoe UI",Arial,sans-serif;
+  --font-humanist:"LCT Picon","LCT Picon Medium","Barlow","Segoe UI",Arial,sans-serif;
   --font-body:var(--font-humanist);
   --font-display:var(--font-humanist);
 }
@@ -7704,6 +7704,276 @@ body.home .challenges-section .challenge-card h3::after{
   height:2px!important;
   margin:17px auto 0!important;
   content:""!important;
+}
+
+/* Homepage surface: keep every section background pure white. */
+html:has(body.home),
+body.home,
+body.home .site-main,
+body.home .site-main > section,
+body.home .site-main > .section-light,
+body.home .site-main > .section-white,
+body.home .site-main > .section-dark,
+body.home .site-main > .section-blue{
+  background:#fff!important;
+}
+
+/* Preserve readable contrast after changing dark section surfaces to white. */
+body.home .site-main > .section-dark{
+  color:#14253f!important;
+}
+
+body.home .site-main > .section-dark h1,
+body.home .site-main > .section-dark h2,
+body.home .site-main > .section-dark h3,
+body.home .site-main > .section-dark h4,
+body.home .site-main > .section-dark h5,
+body.home .site-main > .section-dark h6{
+  color:#0b1428!important;
+}
+
+body.home .site-main > .section-dark p{
+  color:#536078!important;
+}
+
+body.home .site-main > .section-dark .section-kicker{
+  color:#1457d9!important;
+}
+
+body.home .site-footer{
+  color:#14253f!important;
+  background:#fff!important;
+}
+
+body.home .site-footer h2,
+body.home .site-footer p,
+body.home .site-footer a{
+  color:#14253f!important;
+}
+
+body.home .site-footer .footer-column h2{
+  color:#536078!important;
+}
+
+body.home .site-footer .footer-bottom{
+  border-top-color:rgba(20,37,63,.1)!important;
+}
+
+/* Rebalance capability cards for the white section surface. */
+body.home .capability-grid{
+  border-color:rgba(20,37,63,.1)!important;
+  background:#f7f9fc!important;
+  box-shadow:0 12px 30px rgba(20,37,63,.06)!important;
+}
+
+body.home .capability-grid article{
+  border-right-color:rgba(20,37,63,.1)!important;
+  background:#fff!important;
+}
+
+body.home .capability-grid article:hover{
+  background:#f6f9ff!important;
+}
+
+body.home .capability-icon{
+  border-color:rgba(37,99,235,.18)!important;
+  color:#1457d9!important;
+  background:#eff5ff!important;
+}
+
+/* Restore contrast for the OpsXpress difference section on white. */
+body.home .difference-section{
+  color:#14253f!important;
+}
+
+body.home .difference-section .section-kicker,
+body.home .difference-section h2{
+  color:#0b1428!important;
+}
+
+body.home .difference-section .section-kicker{
+  color:#1457d9!important;
+}
+
+body.home .difference-section > .site-shell > .reveal > p:not(.section-kicker){
+  color:#536078!important;
+}
+
+body.home .difference-metrics{
+  border-color:rgba(20,37,63,.1)!important;
+  background:#f7f9fc!important;
+  box-shadow:0 12px 30px rgba(20,37,63,.06)!important;
+}
+
+body.home .difference-metrics div{
+  border-right-color:rgba(20,37,63,.1)!important;
+}
+
+body.home .difference-metrics strong{
+  color:#0b1428!important;
+}
+
+body.home .difference-metrics span{
+  color:#536078!important;
+}
+
+body.home .difference-metrics .metric-value{
+  margin:0!important;
+  color:#1457d9!important;
+  font-size:clamp(1.8rem,3vw,2.7rem)!important;
+  font-weight:700!important;
+  letter-spacing:-.04em!important;
+  line-height:1!important;
+}
+
+body.home .difference-metrics .metric-label{
+  margin:10px 0 0!important;
+  color:#536078!important;
+  font-size:.75rem!important;
+  font-weight:600!important;
+  letter-spacing:.04em!important;
+  line-height:1.3!important;
+  text-transform:uppercase;
+}
+
+/* =========================================================
+   BOTTLENECK TO BREAKTHROUGH — EDITABLE FIX SECTION
+   ========================================================= */
+body.home .breakthrough-section{
+  padding:72px 0!important;
+  background:#fff!important;
+}
+
+body.home .breakthrough-layout{
+  display:grid!important;
+  grid-template-columns:minmax(240px,.72fr) minmax(0,2fr)!important;
+  align-items:center!important;
+  gap:clamp(36px,5vw,72px)!important;
+}
+
+body.home .breakthrough-intro{
+  max-width:330px;
+}
+
+body.home .breakthrough-intro .section-kicker{
+  margin-bottom:14px!important;
+  color:#1457d9!important;
+  font-size:.75rem!important;
+  font-weight:700!important;
+  letter-spacing:.1em!important;
+}
+
+body.home .breakthrough-intro h2{
+  max-width:11ch!important;
+  margin:0 0 22px!important;
+  color:#0b1428!important;
+  font-size:clamp(2rem,3vw,3rem)!important;
+  font-weight:700!important;
+  letter-spacing:-.035em!important;
+  line-height:1.12!important;
+}
+
+body.home .fix-accent{
+  color:#f97316!important;
+}
+
+body.home .breakthrough-intro > p:not(.section-kicker){
+  max-width:28ch;
+  margin:0!important;
+  color:#536078!important;
+  font-size:1rem!important;
+  line-height:1.65!important;
+}
+
+body.home .breakthrough-grid{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:14px!important;
+}
+
+body.home .breakthrough-card{
+  display:grid!important;
+  min-height:164px;
+  grid-template-columns:112px minmax(0,1fr)!important;
+  align-items:center!important;
+  gap:0!important;
+  padding:18px 20px 18px 14px!important;
+  border:1px solid rgba(51,65,85,.1)!important;
+  border-radius:16px!important;
+  background:#fff!important;
+  box-shadow:0 10px 28px rgba(51,65,85,.08)!important;
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease!important;
+}
+
+body.home .breakthrough-card:hover{
+  border-color:rgba(249,115,22,.28)!important;
+  box-shadow:0 16px 34px rgba(51,65,85,.12)!important;
+  transform:translateY(-3px)!important;
+}
+
+body.home .breakthrough-icon{
+  width:88px!important;
+  margin:0 auto!important;
+}
+
+body.home .breakthrough-icon img{
+  display:block;
+  width:88px!important;
+  height:88px!important;
+  object-fit:contain;
+}
+
+body.home .breakthrough-copy{
+  min-width:0;
+  padding:2px 0 2px 20px;
+  border-left:2px solid #f97316;
+}
+
+body.home .breakthrough-copy h3{
+  margin:0 0 10px!important;
+  color:#0b1428!important;
+  font-size:1.15rem!important;
+  font-weight:700!important;
+  letter-spacing:-.02em!important;
+  line-height:1.25!important;
+}
+
+body.home .breakthrough-copy p{
+  margin:0!important;
+  color:#536078!important;
+  font-size:.9rem!important;
+  line-height:1.55!important;
+}
+
+@media (max-width:1050px){
+  body.home .breakthrough-layout{
+    grid-template-columns:1fr!important;
+  }
+  body.home .breakthrough-intro{
+    max-width:680px;
+  }
+  body.home .breakthrough-intro h2{
+    max-width:18ch!important;
+  }
+}
+
+@media (max-width:700px){
+  body.home .breakthrough-section{padding:56px 0!important;}
+  body.home .breakthrough-grid{
+    grid-template-columns:1fr!important;
+  }
+  body.home .breakthrough-card{
+    grid-template-columns:88px minmax(0,1fr)!important;
+    padding:16px 18px 16px 12px!important;
+  }
+  body.home .breakthrough-icon,
+  body.home .breakthrough-icon img{
+    width:72px!important;
+    height:72px!important;
+  }
+  body.home .breakthrough-copy{
+    padding-left:16px;
+  }
 }
 
 

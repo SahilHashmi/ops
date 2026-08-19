@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Unified infrastructure oversight</title>
+  <rect width="96" height="96" rx="24" fill="#f8fafc"/>
+  <path d="M17 48c8-13 18-20 31-20s23 7 31 20c-8 13-18 20-31 20S25 61 17 48Z" fill="#fff" stroke="#475569" stroke-width="3"/>
+  <circle cx="48" cy="48" r="12" fill="#f97316"/>
+  <circle cx="48" cy="48" r="5" fill="#fff"/>
+  <path d="M17 29V17h12M67 17h12v12M79 67v12H67M29 79H17V67" fill="none" stroke="#475569" stroke-linecap="round" stroke-width="3"/>
+</svg>
