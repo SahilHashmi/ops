@@ -80,7 +80,7 @@ add_action(
 
 		wp_enqueue_style(
 			'opsxpress-fonts',
-			'[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap)',
+			'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap',
 			array(),
 			null
 		);

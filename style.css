@@ -7387,16 +7387,16 @@ section.hero{
   }
 }
 
-/* ===== Navbar final fix: subtle grey + no nav-item boxes ===== */
+/* ===== Navbar final fix: solid grey + no nav-item boxes ===== */
 .modern-header{
-  background:rgba(238,241,245,.58)!important;
+  background:#eef1f5!important;
   border-color:rgba(6,26,59,.08)!important;
   box-shadow:0 10px 28px rgba(6,26,59,.06),0 2px 7px rgba(6,26,59,.035)!important;
-  backdrop-filter:blur(18px) saturate(120%)!important;
-  -webkit-backdrop-filter:blur(18px) saturate(120%)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
 }
 .site-header-wrap.is-scrolled .modern-header{
-  background:rgba(238,241,245,.68)!important;
+  background:#eef1f5!important;
 }
 
 /* Remove WordPress navigation hover/active pill/box treatment */
@@ -7431,3 +7431,279 @@ section.hero{
   transform:none!important;
   content:none!important;
 }
+
+/* =========================================================
+   CHALLENGES SECTION — EDITABLE REFERENCE LAYOUT
+   ========================================================= */
+.challenges-section{
+  padding:132px 0!important;
+  background:#f6f7fa!important;
+}
+
+.challenges-section > .site-shell{
+  width:var(--shell)!important;
+  max-width:none!important;
+}
+
+.challenges-section .section-heading-wide{
+  position:relative!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1.02fr) minmax(420px,1fr)!important;
+  grid-template-areas:
+    "main visual"
+    "support visual"!important;
+  align-items:center!important;
+  gap:0 30px!important;
+  max-width:none!important;
+  margin-bottom:32px!important;
+}
+
+.challenges-section .heading-main{
+  grid-area:main;
+  max-width:500px!important;
+}
+
+.challenges-section .section-kicker{
+  display:flex!important;
+  align-items:center;
+  gap:9px;
+  margin:0 0 18px!important;
+  color:#1457d9!important;
+  font-size:10px!important;
+  font-weight:800!important;
+  letter-spacing:.08em!important;
+  line-height:1!important;
+  text-transform:uppercase;
+}
+
+.challenges-section .section-kicker::before{
+  width:20px;
+  height:1px;
+  content:"";
+  background:#2563eb;
+}
+
+.challenges-section .heading-main h2{
+  max-width:500px!important;
+  margin:0!important;
+  color:#0b1428!important;
+  font-size:clamp(2rem,3.2vw,2.55rem)!important;
+  font-weight:750!important;
+  letter-spacing:-.045em!important;
+  line-height:1.08!important;
+}
+
+.challenges-section .heading-support{
+  grid-area:support;
+  max-width:430px!important;
+  margin:18px 0 0!important;
+  color:#46536a!important;
+  font-size:13px!important;
+  line-height:1.5!important;
+}
+
+.challenges-section .challenges-illustration{
+  grid-area:visual;
+  align-self:center;
+  width:100%;
+  margin:0!important;
+}
+
+.challenges-section .challenges-illustration img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:290px;
+  object-fit:contain;
+  object-position:center;
+  mix-blend-mode:multiply;
+}
+
+.challenge-accent-orange{color:#f05b16!important;}
+.challenge-accent-blue{color:#1457d9!important;}
+
+.challenges-section .challenge-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+  gap:12px!important;
+}
+
+.challenges-section .challenge-card{
+  display:flex!important;
+  min-height:370px!important;
+  align-items:center!important;
+  padding:26px 18px 28px!important;
+  border:1px solid rgba(20,37,63,.08)!important;
+  border-radius:12px!important;
+  background:#fff!important;
+  box-shadow:0 4px 14px rgba(20,37,63,.07)!important;
+  text-align:center!important;
+}
+
+.challenges-section .challenge-card:hover{
+  border-color:rgba(37,99,235,.18)!important;
+  box-shadow:0 8px 20px rgba(20,37,63,.1)!important;
+  transform:translateY(-3px)!important;
+}
+
+.challenges-section .challenge-card::before,
+.challenges-section .card-number,
+.challenges-section .card-line{
+  display:none!important;
+}
+
+.challenges-section .line-icon{
+  flex:0 0 88px;
+  width:88px!important;
+  height:88px!important;
+  margin:0 0 18px!important;
+  border-radius:50%!important;
+  color:#1457d9!important;
+  background:#f1f5ff!important;
+}
+
+.challenges-section .challenge-card:nth-child(2) .line-icon,
+.challenges-section .challenge-card:nth-child(4) .line-icon{
+  color:#f05b16!important;
+  background:#fff7f1!important;
+}
+
+.challenges-section .line-icon svg{
+  width:31px!important;
+  stroke-width:1.7!important;
+}
+
+.challenges-section .challenge-card h3{
+  max-width:180px;
+  min-height:42px!important;
+  margin:0 0 13px!important;
+  color:#0b1428!important;
+  font-size:19px!important;
+  font-weight:750!important;
+  letter-spacing:-.02em!important;
+  line-height:1.25!important;
+}
+
+.challenges-section .challenge-card h3::after{
+  display:block;
+  width:20px;
+  height:2px;
+  margin:13px auto 0;
+  content:"";
+  background:#2563eb;
+}
+
+.challenges-section .challenge-card:nth-child(2) h3::after,
+.challenges-section .challenge-card:nth-child(4) h3::after{
+  background:#f05b16;
+}
+
+.challenges-section .challenge-card p{
+  max-width:190px!important;
+  min-height:0!important;
+  margin:0!important;
+  color:#536078!important;
+  font-size:15px!important;
+  line-height:1.55!important;
+}
+
+@media (max-width:900px){
+  .challenges-section{padding:100px 0!important;}
+  .challenges-section .section-heading-wide{
+    grid-template-columns:minmax(0,1fr) minmax(300px,.9fr)!important;
+  }
+  .challenges-section .challenge-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
+
+@media (max-width:600px){
+  .challenges-section{padding:80px 0!important;}
+  .challenges-section .section-heading-wide{
+    display:block!important;
+    margin-bottom:26px!important;
+  }
+  .challenges-section .challenges-illustration{
+    margin:20px 0 0!important;
+  }
+  .challenges-section .challenges-illustration img{max-height:190px;}
+  .challenges-section .challenge-grid{grid-template-columns:1fr!important;}
+}
+
+/* =========================================================
+   HOMEPAGE TYPOGRAPHY — FIRA SANS MEDIUM / BOLD
+   ========================================================= */
+body.home{
+  --font-humanist:"Fira Sans","Segoe UI",Arial,sans-serif;
+  --font-body:var(--font-humanist);
+  --font-display:var(--font-humanist);
+}
+
+body.home .site-main *,
+body.home .site-header-wrap *,
+body.home .wp-site-blocks > footer *{
+  font-family:var(--font-humanist)!important;
+}
+
+body.home :where(h1,h2,h3,h4,h5,h6,.wp-block-heading){
+  font-weight:700!important;
+  letter-spacing:-.035em!important;
+  line-height:1.08!important;
+}
+
+body.home :where(p,li,a,button,input,textarea,select){
+  font-weight:500;
+}
+
+/* Keep section labels clean and section headings on one medium scale. */
+body.home .section-kicker::before,
+body.home .service-label::before,
+body.home .case-label::before{
+  display:none!important;
+  content:none!important;
+}
+
+body.home .site-main h2,
+body.home .wp-site-blocks > footer h2{
+  font-size:clamp(2.25rem,3.5vw,3.5rem)!important;
+}
+
+body.home .site-main .section-kicker,
+body.home .site-main .service-label,
+body.home .site-main .case-label{
+  font-size:.75rem!important;
+}
+
+/* Keep footer navigation headings compact and consistent. */
+body.home .wp-site-blocks > footer .footer-column h2{
+  margin-bottom:10px!important;
+  font-size:.68rem!important;
+  font-weight:700!important;
+  letter-spacing:.13em!important;
+  line-height:1!important;
+}
+
+/* Keep each challenge accent line directly beneath its title. */
+body.home .challenges-section .challenge-card h3{
+  display:block!important;
+  min-height:48px!important;
+  margin-bottom:16px!important;
+  font-size:20px!important;
+  line-height:1.25!important;
+}
+
+body.home .challenges-section .line-icon{
+  flex-basis:96px;
+  width:96px!important;
+  height:96px!important;
+  margin-bottom:22px!important;
+}
+
+body.home .challenges-section .challenge-card h3::after{
+  display:block!important;
+  width:20px!important;
+  height:2px!important;
+  margin:17px auto 0!important;
+  content:""!important;
+}
+
+
