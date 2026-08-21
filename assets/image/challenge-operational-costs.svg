@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Sky-high operational costs</title>
+  <defs>
+    <linearGradient id="orange" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fdba74"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#f97316" flood-opacity=".25"/></filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="31" y="75" width="14" height="27" rx="3" fill="url(#orange)"/><rect x="50" y="64" width="14" height="38" rx="3" fill="url(#orange)"/><rect x="69" y="50" width="14" height="52" rx="3" fill="url(#orange)"/>
+    <circle cx="94" cy="88" r="18" fill="#ea580c"/><text x="94" y="95" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">$</text>
+  </g>
+  <path d="m25 64 21-22 14 10 26-28" fill="none" stroke="#f97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <path d="M75 24h11v11" fill="none" stroke="#f97316" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+</svg>

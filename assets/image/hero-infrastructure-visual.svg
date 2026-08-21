@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 620" role="img" aria-labelledby="title desc">
+  <title id="title">OpsXpress connected IT infrastructure platform</title>
+  <desc id="desc">A central OpsXpress operations platform connected to cloud, database, DevOps, network, and NOC services with live infrastructure metrics.</desc>
+  <defs>
+    <linearGradient id="platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset=".55" stop-color="#eff6ff"/><stop offset="1" stop-color="#93c5fd"/></linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2563eb"/><stop offset=".55" stop-color="#60a5fa"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fb923c"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <filter id="softShadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#1e3a8a" flood-opacity=".18"/></filter>
+    <filter id="cardShadow" x="-40%" y="-40%" width="180%" height="200%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#334155" flood-opacity=".14"/></filter>
+  </defs>
+  <g fill="none" stroke-linecap="round">
+    <ellipse cx="393" cy="302" rx="190" ry="104" stroke="#dbeafe" stroke-width="2"/>
+    <ellipse cx="393" cy="302" rx="171" ry="91" stroke="#bfdbfe" stroke-width="1.5" stroke-dasharray="3 10"/>
+    <path d="M236 338a171 91 0 0 1-5-61" stroke="#60a5fa" stroke-width="7"/>
+    <path d="M542 259a171 91 0 0 1 13 65" stroke="#fb923c" stroke-width="7"/>
+  </g>
+  <g fill="#93c5fd" opacity=".82"><rect x="250" y="172" width="16" height="16" rx="3" transform="rotate(30 258 180)"/><rect x="622" y="224" width="14" height="14" rx="3" transform="rotate(30 629 231)"/><rect x="227" y="376" width="13" height="13" rx="3" transform="rotate(30 233 382)"/></g>
+  <g fill="#fdba74" opacity=".9"><circle cx="550" cy="215" r="5"/><circle cx="248" cy="246" r="5"/></g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M358 270 190 150M425 256 565 145M338 321 165 336M446 330 603 344M384 240 386 112" stroke="#bfdbfe" stroke-width="2"/>
+    <path d="M358 270 190 150M425 256 565 145M338 321 165 336M446 330 603 344M384 240 386 112" stroke="url(#rim)" stroke-width="2" stroke-dasharray="2 18"/>
+  </g>
+  <g fill="#2563eb"><circle cx="358" cy="270" r="5"/><circle cx="190" cy="150" r="5"/><circle cx="425" cy="256" r="5"/><circle cx="565" cy="145" r="5"/><circle cx="338" cy="321" r="5"/><circle cx="165" cy="336" r="5"/></g>
+  <g fill="#f97316"><circle cx="446" cy="330" r="5"/><circle cx="603" cy="344" r="5"/><circle cx="384" cy="240" r="5"/><circle cx="386" cy="112" r="5"/></g>
+  <g filter="url(#softShadow)">
+    <ellipse cx="393" cy="347" rx="142" ry="62" fill="#dbeafe" stroke="#93c5fd" stroke-width="2"/>
+    <ellipse cx="393" cy="331" rx="126" ry="55" fill="#ffffff" stroke="#bfdbfe" stroke-width="2"/>
+    <ellipse cx="393" cy="315" rx="110" ry="49" fill="#dbeafe" stroke="#60a5fa" stroke-width="3"/>
+    <ellipse cx="393" cy="297" rx="92" ry="42" fill="url(#platform)" stroke="#2563eb" stroke-width="3"/>
+    <ellipse cx="393" cy="286" rx="76" ry="36" fill="#ffffff" stroke="url(#rim)" stroke-width="3"/>
+    <text x="393" y="293" fill="#0f172a" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Ops<tspan fill="#f97316">Xpress</tspan></text>
+  </g>
+  <g filter="url(#cardShadow)">
+    <g transform="translate(107 83) rotate(-3 82 67)">
+      <rect width="164" height="134" rx="22" fill="#fff" stroke="#e2e8f0"/>
+      <g transform="translate(58 25)" fill="none" stroke="#2563eb" stroke-width="3"><ellipse cx="24" cy="5" rx="18" ry="6"/><path d="M6 5v18c0 4 8 7 18 7s18-3 18-7V5M6 14c0 4 8 7 18 7s18-3 18-7"/></g>
+      <text x="82" y="76" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Database</text><text x="82" y="98" fill="#16a34a" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Optimal</text>
+    </g>
+    <g transform="translate(326 23) rotate(4 74 60)">
+      <rect width="148" height="122" rx="22" fill="#fff" stroke="#e2e8f0"/>
+      <path d="M52 43c3-13 22-16 29-5 14-4 23 14 12 23H52c-13-4-12-15 0-18Z" fill="url(#blue)"/>
+      <text x="74" y="82" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Cloud</text><text x="74" y="102" fill="#16a34a" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Healthy</text>
+    </g>
+    <g transform="translate(530 96) rotate(3 82 67)">
+      <rect width="164" height="134" rx="22" fill="#fff" stroke="#e2e8f0"/>
+      <text x="82" y="55" fill="#6366f1" font-family="Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle">∞</text>
+      <text x="82" y="82" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">DevOps</text><text x="82" y="103" fill="#16a34a" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Deployed</text>
+    </g>
+    <g transform="translate(72 275) rotate(3 74 64)">
+      <rect width="148" height="128" rx="22" fill="#fff" stroke="#e2e8f0"/>
+      <g transform="translate(47 24)" fill="none" stroke="#60a5fa" stroke-width="3"><circle cx="27" cy="8" r="5"/><circle cx="8" cy="35" r="5"/><circle cx="46" cy="35" r="5"/><path d="M27 13v10M12 32l12-8M42 32l-12-8"/></g>
+      <text x="74" y="83" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Network</text><text x="74" y="104" fill="#16a34a" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Secure</text>
+    </g>
+    <g transform="translate(590 286) rotate(4 74 64)">
+      <rect width="148" height="128" rx="22" fill="#fff" stroke="#e2e8f0"/>
+      <g transform="translate(48 24)" fill="none" stroke="#3b82f6" stroke-width="3"><path d="M6 28V18a20 20 0 0 1 40 0v10M6 26h8v16H8c-4 0-6-3-6-7v-2c0-4 2-7 4-7ZM46 26h-8v16h6c4 0 6-3 6-7v-2c0-4-2-7-4-7Z"/></g>
+      <text x="74" y="83" fill="#0f172a" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">NOC</text><text x="74" y="104" fill="#16a34a" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">24/7 Active</text>
+    </g>
+  </g>
+  <g transform="translate(165 442)" filter="url(#cardShadow)">
+    <rect width="500" height="112" rx="20" fill="#fff" stroke="#e2e8f0"/>
+    <path d="M125 18v76M250 18v76M375 18v76" stroke="#e2e8f0"/>
+    <g font-family="Arial, sans-serif"><text x="22" y="30" fill="#64748b" font-size="10">Availability</text><text x="22" y="58" fill="#0f172a" font-size="22" font-weight="700">99.9%</text><path d="m22 82 10-8 9 7 9-17 10 15 10-8 10 10 11-15 10 13" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <text x="147" y="30" fill="#64748b" font-size="10">Response Time</text><text x="147" y="58" fill="#0f172a" font-size="22" font-weight="700">18ms</text><path d="m147 82 10-8 10 9 10-15 10 14 10-10 10 9 10-17 11 14" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <text x="272" y="30" fill="#64748b" font-size="10">Incidents Resolved</text><text x="272" y="58" fill="#0f172a" font-size="22" font-weight="700">1,247</text><path d="m272 82 10-7 10 8 10-17 10 14 10-8 10 9 10-16 11 13" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M406 33 419 27l13 6v14c0 10-5 16-13 21-8-5-13-11-13-21Z" fill="#22c55e"/><path d="m413 46 5 5 8-10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><text x="443" y="44" fill="#0f172a" font-size="12" font-weight="700">Protected</text><text x="443" y="64" fill="#64748b" font-size="9">Security-First</text><text x="443" y="77" fill="#64748b" font-size="9">Operations</text></g>
+  </g>
+</svg>

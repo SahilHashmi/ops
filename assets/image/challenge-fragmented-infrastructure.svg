@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Fragmented IT infrastructure</title>
+  <defs>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#2563eb" flood-opacity=".25"/></filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <g fill="url(#blue)" stroke="#1e40af" stroke-width="1.5">
+      <rect x="22" y="44" width="42" height="18" rx="5"/><rect x="22" y="64" width="42" height="18" rx="5"/><rect x="22" y="84" width="42" height="18" rx="5"/>
+      <path d="m76 58 26-9 14 8v28l-26 9-14-8Z"/><path d="m76 58 14 8 26-9M90 66v28" fill="none" stroke="#dbeafe"/>
+    </g>
+    <g fill="#fff"><circle cx="30" cy="53" r="2"/><circle cx="30" cy="73" r="2"/><circle cx="30" cy="93" r="2"/></g>
+  </g>
+  <g fill="#2563eb"><rect x="68" y="25" width="10" height="10" rx="2" transform="rotate(45 73 30)"/><circle cx="83" cy="40" r="4"/><rect x="58" y="24" width="5" height="5" rx="1"/></g>
+</svg>

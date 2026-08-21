@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Talent gaps and slow hiring</title>
+  <defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#f97316" flood-opacity=".22"/></filter></defs>
+  <g filter="url(#shadow)" fill="#fff" stroke="#f97316" stroke-width="3">
+    <rect x="25" y="25" width="54" height="72" rx="6"/>
+    <circle cx="48" cy="48" r="7"/><path d="M36 70c1-10 5-15 12-15s11 5 12 15M64 43h8M64 52h8M64 65h8M35 81h34" fill="none" stroke-linecap="round"/>
+    <circle cx="83" cy="82" r="18"/><path d="m96 95 12 12" fill="none" stroke-linecap="round" stroke-width="5"/>
+  </g>
+</svg>

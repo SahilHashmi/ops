@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Unplanned downtime</title>
+  <defs><filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#2563eb" flood-opacity=".22"/></filter></defs>
+  <g filter="url(#shadow)">
+    <circle cx="58" cy="58" r="36" fill="#eff6ff" stroke="#2563eb" stroke-width="5"/>
+    <path d="M58 34v25l-13 9" fill="none" stroke="#2563eb" stroke-linecap="round" stroke-width="5"/>
+    <circle cx="58" cy="59" r="4" fill="#2563eb"/>
+    <path d="m88 62 23 40H65Z" fill="#fff" stroke="#60a5fa" stroke-linejoin="round" stroke-width="4"/>
+    <path d="M88 75v13" stroke="#2563eb" stroke-linecap="round" stroke-width="4"/><circle cx="88" cy="95" r="2.5" fill="#2563eb"/>
+  </g>
+</svg>

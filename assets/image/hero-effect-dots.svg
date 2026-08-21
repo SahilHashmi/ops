@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.7" fill="#60a5fa" opacity=".34"/></pattern>
+    <pattern id="hex" width="56" height="48" patternUnits="userSpaceOnUse"><path d="m14 1 13 7v15l-13 7L1 23V8Z" fill="none" stroke="#cbd5e1" stroke-width="1" opacity=".42"/></pattern>
+    <radialGradient id="fade"><stop offset="0" stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+    <mask id="mask"><ellipse cx="400" cy="300" rx="390" ry="285" fill="url(#fade)"/></mask>
+  </defs>
+  <rect width="800" height="600" fill="url(#dots)" mask="url(#mask)"/>
+  <rect x="580" width="220" height="230" fill="url(#hex)" opacity=".55"/>
+  <rect y="400" width="220" height="200" fill="url(#hex)" opacity=".4"/>
+</svg>

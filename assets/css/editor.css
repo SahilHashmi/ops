@@ -44,21 +44,52 @@
 	display: none;
 }
 
-.editor-styles-wrapper .system-card {
-	position: static;
+.editor-styles-wrapper .hero.hero-reference {
+	box-sizing: border-box;
+	min-height: 760px;
+	padding: 80px 24px 64px;
+	color: #0b1428;
+	background: #fff;
+	font-family: "LCT Picon", "LCT Picon Medium", "Barlow", "Segoe UI", Arial, sans-serif;
+}
+
+.editor-styles-wrapper .hero-reference * {
+	font-family: inherit;
+}
+
+.editor-styles-wrapper .hero-reference .hero-grid {
+	display: grid;
+	height: auto;
+	min-height: 600px;
+	grid-template-columns: minmax(0, .88fr) minmax(520px, 1.12fr);
+	align-items: center;
+	gap: 28px;
+}
+
+.editor-styles-wrapper .hero-reference-visual {
 	width: 100%;
-	transform: none;
+	max-width: 760px;
+	margin: 0;
+	justify-self: end;
 }
 
-.editor-styles-wrapper .hero-visual {
-	min-height: 0;
-	perspective: none;
+.editor-styles-wrapper .hero-reference-visual img {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-height: none;
+	object-fit: contain;
 }
 
-.editor-styles-wrapper .floating-badge {
-	position: static;
-	margin-top: 12px;
-	animation: none;
+@media (max-width: 900px) {
+	.editor-styles-wrapper .hero-reference .hero-grid {
+		grid-template-columns: 1fr;
+		min-height: 0;
+	}
+
+	.editor-styles-wrapper .hero-reference-visual {
+		justify-self: center;
+	}
 }
 
 .editor-styles-wrapper .site-shell {

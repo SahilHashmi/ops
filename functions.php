@@ -23,7 +23,13 @@ add_action(
 		add_theme_support( 'align-wide' );
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'editor-styles' );
-		add_editor_style( array( 'style.css', 'assets/css/editor.css' ) );
+		add_editor_style(
+			array(
+				'https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap',
+				'style.css',
+				'assets/css/editor.css',
+			)
+		);
 
 		add_theme_support(
 			'custom-logo',
