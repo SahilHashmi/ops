@@ -76,6 +76,130 @@ function opsxpress_asset_version( $relative_path ) {
 }
 
 /**
+ * Placeholder used for theme asset URLs inside block template markup.
+ *
+ * Block templates are static HTML, so they cannot call get_theme_file_uri().
+ * Templates reference assets as %THEME_URI%/assets/... and the placeholder is
+ * resolved against the active theme at runtime. That keeps the markup free of
+ * the theme folder name, so the same files work locally, on staging, on the
+ * live server, and after the theme directory is renamed or copied.
+ */
+define( 'OPSXPRESS_ASSET_PLACEHOLDER', '%THEME_URI%' );
+
+/**
+ * Builds the URL of a theme asset, preferring a child theme override.
+ *
+ * @param string $relative_path Theme-relative asset path, possibly URL encoded.
+ * @return string
+ */
+function opsxpress_theme_asset_uri( $relative_path ) {
+	$relative_path = ltrim( $relative_path, '/' );
+
+	if ( '' === $relative_path ) {
+		return untrailingslashit( get_stylesheet_directory_uri() );
+	}
+
+	// File lookups need the decoded name; the URL keeps its encoded form.
+	$decoded = rawurldecode( $relative_path );
+
+	if ( file_exists( get_stylesheet_directory() . '/' . $decoded ) ) {
+		return get_stylesheet_directory_uri() . '/' . $relative_path;
+	}
+
+	return get_template_directory_uri() . '/' . $relative_path;
+}
+
+/**
+ * Replaces asset placeholders with URLs of the currently active theme.
+ *
+ * @param string $content Markup that may contain placeholders.
+ * @return string
+ */
+function opsxpress_resolve_asset_placeholders( $content ) {
+	if ( ! is_string( $content ) || false === strpos( $content, OPSXPRESS_ASSET_PLACEHOLDER ) ) {
+		return $content;
+	}
+
+	return preg_replace_callback(
+		'#' . preg_quote( OPSXPRESS_ASSET_PLACEHOLDER, '#' ) . '/?([^"\'\s>)]*)#',
+		function ( $matches ) {
+			return opsxpress_theme_asset_uri( $matches[1] );
+		},
+		$content
+	);
+}
+
+/**
+ * Resolves placeholders in a single block template or template part.
+ *
+ * @param WP_Block_Template|null $block_template Template object.
+ * @return WP_Block_Template|null
+ */
+function opsxpress_resolve_block_template_assets( $block_template ) {
+	if ( $block_template instanceof WP_Block_Template ) {
+		$block_template->content = opsxpress_resolve_asset_placeholders( $block_template->content );
+	}
+
+	return $block_template;
+}
+add_filter( 'get_block_file_template', 'opsxpress_resolve_block_template_assets' );
+
+/**
+ * Resolves placeholders in template queries, which the front end and the Site
+ * Editor both use to load templates.
+ *
+ * @param WP_Block_Template[] $query_result Templates found for the query.
+ * @return WP_Block_Template[]
+ */
+add_filter(
+	'get_block_templates',
+	function ( $query_result ) {
+		return array_map( 'opsxpress_resolve_block_template_assets', $query_result );
+	}
+);
+
+/**
+ * Safety net for templates already saved to the database with a placeholder.
+ */
+add_filter(
+	'render_block',
+	function ( $block_content ) {
+		return opsxpress_resolve_asset_placeholders( $block_content );
+	}
+);
+
+/**
+ * Converts absolute theme URLs back into the placeholder when a template is
+ * saved from the Site Editor, so a customised template never stores the URL of
+ * the environment it was edited in.
+ *
+ * @param stdClass $changes Post data prepared for insertion.
+ * @return stdClass
+ */
+function opsxpress_restore_asset_placeholders( $changes ) {
+	if ( ! isset( $changes->post_content ) || ! is_string( $changes->post_content ) ) {
+		return $changes;
+	}
+
+	$theme_urls = array_unique(
+		array(
+			untrailingslashit( get_stylesheet_directory_uri() ),
+			untrailingslashit( get_template_directory_uri() ),
+		)
+	);
+
+	$changes->post_content = str_replace(
+		$theme_urls,
+		OPSXPRESS_ASSET_PLACEHOLDER,
+		$changes->post_content
+	);
+
+	return $changes;
+}
+add_filter( 'rest_pre_insert_wp_template', 'opsxpress_restore_asset_placeholders' );
+add_filter( 'rest_pre_insert_wp_template_part', 'opsxpress_restore_asset_placeholders' );
+
+/**
  * Front-end assets.
  */
 add_action(
