@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title description">
+  <title id="title">OpsXpress network operations center</title>
+  <desc id="description">An original illustration of an OpsXpress engineer monitoring infrastructure dashboards and global alerts.</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f8f9"/>
+      <stop offset="0.55" stop-color="#e9ebed"/>
+      <stop offset="1" stop-color="#cfd3d6"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#d9dcdf"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#242a30"/>
+      <stop offset="1" stop-color="#090c0f"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#343b42"/>
+      <stop offset="1" stop-color="#15191d"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#45494d"/>
+      <stop offset="1" stop-color="#202326"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ff9a2f"/>
+      <stop offset="1" stop-color="#ff5b00"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#ff7614" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#ff7614" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#17202a" flood-opacity="0.22"/>
+    </filter>
+    <filter id="smallShadow" x="-50%" y="-50%" width="200%" height="220%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#14191f" flood-opacity="0.28"/>
+    </filter>
+    <filter id="glow" x="-200%" y="-200%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#ff6b0b" opacity="0.22"/>
+    </pattern>
+    <clipPath id="mainScreen"><rect x="419" y="107" width="471" height="266" rx="7"/></clipPath>
+  </defs>
+
+  <rect width="1000" height="760" fill="url(#room)"/>
+  <circle cx="795" cy="118" r="240" fill="url(#halo)"/>
+  <path d="M0 566 400 282l600 131v347H0Z" fill="#eef0f1"/>
+  <path d="M746 0h254v210L892 102Z" fill="url(#dots)"/>
+  <path d="M914 0h86v106L956 63Z" fill="#ff6b0b"/>
+  <path d="M946 0h54v61L971 36Z" fill="#2d3033" opacity="0.7"/>
+
+  <g filter="url(#shadow)">
+    <path d="M210 484 736 384 958 506 407 638Z" fill="url(#desk)"/>
+    <path d="m407 638 551-132v37L408 686 210 530v-46Z" fill="#bec2c5"/>
+    <path d="m433 681 51-12-18 91h-55Z" fill="#aaaeb1"/>
+    <path d="m875 560 48-12 4 83-43 12Z" fill="#aaaeb1"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M398 84 904 107l22 283-533 20Z" fill="#787e83"/>
+    <rect x="404" y="91" width="507" height="303" rx="16" fill="#171b1f"/>
+    <rect x="419" y="107" width="471" height="266" rx="7" fill="url(#screen)"/>
+    <path d="M631 393h55l14 69h-85Z" fill="#353a3e"/>
+    <path d="M570 459h177l27 15H547Z" fill="#8c9195"/>
+  </g>
+
+  <g clip-path="url(#mainScreen)">
+    <rect x="419" y="107" width="471" height="266" fill="url(#screen)"/>
+    <path d="M419 107h471v42H419Z" fill="#111519"/>
+    <g font-family="Arial, sans-serif" font-weight="700">
+      <text x="439" y="134" fill="#f5f6f7" font-size="17">Ops<tspan fill="#ff6b0b">Xpress</tspan></text>
+      <text x="534" y="134" fill="#8e979f" font-size="9" letter-spacing="2">NOC COMMAND</text>
+    </g>
+    <circle cx="852" cy="128" r="5" fill="#40d67d" filter="url(#glow)"/>
+    <text x="862" y="132" fill="#a8b0b7" font-family="Arial, sans-serif" font-size="9">ALL SYSTEMS LIVE</text>
+
+    <g transform="translate(438 164)">
+      <path d="M10 51 26 35l19 2 12-14 26-7 18 10 26-3 13 13 19 4 17 21-12 16-25 3-16 16-31-2-24 11-24-9-18 1-16-17-23-10Z" fill="#4d555c" opacity="0.9"/>
+      <path d="m74 25 8 15-5 14 10 11-8 18m44-47-9 13 15 12-4 22m-83-42 13 10-5 17 16 9" fill="none" stroke="#171c20" stroke-width="2"/>
+      <g fill="#ff6b0b" filter="url(#glow)">
+        <circle cx="40" cy="59" r="4"/><circle cx="76" cy="42" r="4"/><circle cx="104" cy="68" r="4"/><circle cx="139" cy="53" r="4"/><circle cx="73" cy="87" r="4"/>
+      </g>
+      <g stroke="#ff7417" stroke-width="1" opacity="0.8"><path d="m40 59 36-17 28 26 35-15"/><path d="m40 59 33 28 31-19"/></g>
+    </g>
+
+    <g transform="translate(635 164)">
+      <circle cx="50" cy="51" r="42" fill="none" stroke="#3b4248" stroke-width="13"/>
+      <circle cx="50" cy="51" r="42" fill="none" stroke="#ff6b0b" stroke-width="13" stroke-dasharray="167 264" transform="rotate(-82 50 51)"/>
+      <circle cx="50" cy="51" r="25" fill="#171b1f"/>
+      <text x="50" y="49" text-anchor="middle" fill="#f2f4f5" font-family="Arial, sans-serif" font-size="15" font-weight="700">99.9%</text>
+      <text x="50" y="63" text-anchor="middle" fill="#89939b" font-family="Arial, sans-serif" font-size="7">UPTIME</text>
+    </g>
+
+    <g transform="translate(748 168)">
+      <rect width="122" height="104" rx="7" fill="#20262b"/>
+      <path d="M13 80 32 69l18 5 17-25 18 9 24-38" fill="none" stroke="#ff6b0b" stroke-width="3"/>
+      <path d="M13 88h96M13 62h96M13 36h96" stroke="#3b4248" stroke-width="1"/>
+      <g fill="#ff6b0b"><circle cx="32" cy="69" r="3"/><circle cx="67" cy="49" r="3"/><circle cx="109" cy="20" r="3"/></g>
+    </g>
+
+    <g transform="translate(438 292)">
+      <rect width="432" height="61" rx="7" fill="#1e2429"/>
+      <g fill="#444c53"><rect x="15" y="13" width="86" height="5" rx="2"/><rect x="15" y="27" width="64" height="4" rx="2"/><rect x="15" y="40" width="76" height="4" rx="2"/></g>
+      <g transform="translate(132 8)"><rect width="7" height="39" rx="2" fill="#ff6b0b"/><rect x="15" y="16" width="7" height="23" rx="2" fill="#ff8c32"/><rect x="30" y="7" width="7" height="32" rx="2" fill="#ff6b0b"/><rect x="45" y="21" width="7" height="18" rx="2" fill="#ff9d4e"/></g>
+      <g transform="translate(230 11)" font-family="Arial, sans-serif"><circle cx="5" cy="5" r="4" fill="#42d47d"/><text x="16" y="8" fill="#a7afb6" font-size="9">INCIDENT RESOLVED</text><circle cx="5" cy="23" r="4" fill="#ffb12f"/><text x="16" y="26" fill="#a7afb6" font-size="9">PATCH IN PROGRESS</text><circle cx="5" cy="41" r="4" fill="#4f9cff"/><text x="16" y="44" fill="#a7afb6" font-size="9">BACKUP VERIFIED</text></g>
+    </g>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <path d="m196 256 225-23 13 211-238 40Z" fill="#686e73"/>
+    <rect x="207" y="267" width="205" height="192" rx="12" fill="#171b1f"/>
+    <rect x="221" y="282" width="177" height="157" rx="5" fill="url(#screenGlow)"/>
+    <path d="m302 458 39-7 7 52-42 8Z" fill="#42474b"/>
+    <path d="m267 505 124-23 21 10-142 27Z" fill="#8f9498"/>
+  </g>
+  <g transform="translate(235 301)">
+    <text fill="#9ba4ac" font-family="Arial, sans-serif" font-size="9">INCIDENT FLOW</text>
+    <path d="M0 105 24 90l24 8 25-35 25 15 28-51 28 20" fill="none" stroke="#ff6b0b" stroke-width="4"/>
+    <path d="M0 112h148M0 82h148M0 52h148" stroke="#4b535a"/>
+    <g fill="#ff6b0b"><circle cx="24" cy="90" r="4"/><circle cx="73" cy="63" r="4"/><circle cx="126" cy="27" r="4"/></g>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <path d="m729 275 205 33-5 191-209-51Z" fill="#70767b"/>
+    <rect x="739" y="288" width="181" height="196" rx="11" fill="#171b1f"/>
+    <rect x="751" y="302" width="156" height="162" rx="5" fill="url(#screenGlow)"/>
+    <path d="m816 480 35 8-2 47-39-9Z" fill="#42474b"/>
+    <path d="m771 523 132 29-19 9-131-30Z" fill="#8f9498"/>
+  </g>
+  <g transform="translate(769 321)" font-family="Arial, sans-serif">
+    <text fill="#9ba4ac" font-size="9">ACTIVE ALERTS</text>
+    <g transform="translate(0 20)"><circle cx="5" cy="5" r="5" fill="#ff6b0b"/><rect x="18" width="93" height="7" rx="3" fill="#626a71"/><rect x="18" y="13" width="70" height="4" rx="2" fill="#3f474e"/></g>
+    <g transform="translate(0 52)"><circle cx="5" cy="5" r="5" fill="#ff9a2f"/><rect x="18" width="76" height="7" rx="3" fill="#626a71"/><rect x="18" y="13" width="98" height="4" rx="2" fill="#3f474e"/></g>
+    <g transform="translate(0 84)"><circle cx="5" cy="5" r="5" fill="#47d47e"/><rect x="18" width="101" height="7" rx="3" fill="#626a71"/><rect x="18" y="13" width="59" height="4" rx="2" fill="#3f474e"/></g>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <path d="m878 424 84 20-1 139-87-26Z" fill="#2f3438"/>
+    <path d="m887 437 64 15-1 113-66-19Z" fill="#171b1f"/>
+    <g fill="#ff6b0b"><rect x="895" y="462" width="47" height="5" rx="2"/><rect x="895" y="479" width="33" height="5" rx="2"/><rect x="895" y="496" width="51" height="5" rx="2"/></g>
+    <circle cx="940" cy="534" r="5" fill="#47d47e" filter="url(#glow)"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <path d="m517 499 189-36 99 39-203 43Z" fill="#3e4347"/>
+    <g stroke="#656b70" stroke-width="5"><path d="m541 500 154-28"/><path d="m557 510 154-29"/><path d="m575 520 153-30"/></g>
+    <path d="m740 520 75-15 39 21-79 18Z" fill="#c5c8ca"/>
+    <ellipse cx="809" cy="525" rx="11" ry="6" fill="#ff6b0b" opacity="0.65"/>
+  </g>
+
+  <g transform="translate(801 550)" filter="url(#smallShadow)">
+    <ellipse cx="43" cy="48" rx="40" ry="12" fill="#aeb2b5"/>
+    <path d="M13 8h51l-7 40H21Z" fill="#272b2e"/>
+    <ellipse cx="38" cy="9" rx="26" ry="9" fill="#3d4246"/>
+    <ellipse cx="38" cy="9" rx="20" ry="6" fill="#171a1d"/>
+    <path d="M63 17c26 0 26 25 2 27" fill="none" stroke="#272b2e" stroke-width="7"/>
+    <text x="31" y="36" fill="#ff6b0b" font-family="Arial, sans-serif" font-size="18" font-weight="700">X</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M387 741c-7-76 5-142 40-188 29-39 68-59 116-57 64 2 115 43 142 108 17 40 22 86 17 137Z" fill="#15191c"/>
+    <path d="M410 729c-4-64 7-118 34-156 26-37 61-55 103-54 55 2 96 36 120 91 16 36 21 76 17 119Z" fill="url(#shirt)"/>
+    <path d="M507 519c4-22 1-39-7-54-11-20-9-50 7-69 15-18 40-28 64-24 32 5 52 29 55 60 3 29-11 53-34 65-8 5-13 13-14 25Z" fill="#262a2d"/>
+    <path d="M525 469c-17-18-17-48-3-67 14-18 40-24 61-13 20 10 30 34 25 56-3 16-13 29-27 37l-4 32-49-1Z" fill="#bd8061"/>
+    <path d="M516 416c9-34 42-46 70-30 18 10 26 33 20 54l-14-17-4-22c-22 8-43 7-62-4Z" fill="#1c2023"/>
+    <path d="M499 425c-9 3-14 13-11 23l10 31c3 9 12 14 21 11l7-2-18-66Z" fill="#202529"/>
+    <path d="M611 415c10 1 16 10 14 20l-7 31c-2 10-11 16-21 14l-7-2 14-64Z" fill="#202529"/>
+    <path d="M496 427c-8 4-11 11-9 20l7 24 12-4-9-35Z" fill="#ff6b0b"/>
+    <path d="M613 418c8 3 12 10 10 19l-5 24-13-3 7-35Z" fill="#ff6b0b"/>
+    <path d="M489 445c-18 7-27 23-20 38 7 16 21 19 39 19" fill="none" stroke="#292e32" stroke-width="5"/>
+    <circle cx="510" cy="502" r="6" fill="#ff6b0b"/>
+    <path d="m496 542 51 48 53-46-18-28-55-2Z" fill="#303438"/>
+    <path d="M475 563c-48 22-66 82-66 166h72l27-126Z" fill="#34383c"/>
+    <path d="M617 558c55 20 73 83 68 171h-69l-30-126Z" fill="#34383c"/>
+    <path d="M472 604c35 20 71 27 108 22l37 103H458Z" fill="#292d30" opacity="0.65"/>
+    <text x="509" y="612" fill="#f2f3f4" font-family="Arial, sans-serif" font-size="18" font-weight="700" transform="rotate(4 509 612)">Ops<tspan fill="#ff6b0b">Xpress</tspan></text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <path d="M383 619c24-16 55-12 71 8l54 68-25 36-82-51c-25-16-34-45-18-61Z" fill="#202427"/>
+    <path d="M678 607c-22-13-51-6-65 15l-38 58 31 30 74-45c23-14 25-44-2-58Z" fill="#202427"/>
+    <path d="M575 680c14-12 29-13 45-5l38 20-16 21-45-7c-22-3-30-18-22-29Z" fill="#bd8061"/>
+  </g>
+
+  <g filter="url(#smallShadow)">
+    <path d="M354 590c-3 35 6 103 25 170h32l8-135 87-9-4-63Z" fill="#292d30"/>
+    <path d="M697 585c15 47 18 105 9 175h-34l-15-135-85-8 3-64Z" fill="#25292c"/>
+    <path d="m384 751-46 9h89Z" fill="#121518"/>
+    <path d="m704 751 48 9h-92Z" fill="#121518"/>
+  </g>
+
+  <g transform="translate(175 205)" filter="url(#smallShadow)">
+    <path d="m34 0 34 58H0Z" fill="url(#orange)"/>
+    <rect x="31" y="18" width="6" height="22" rx="3" fill="#fff"/>
+    <circle cx="34" cy="48" r="4" fill="#fff"/>
+  </g>
+</svg>
